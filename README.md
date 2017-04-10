@@ -24,7 +24,7 @@ Try it out at [toJSON.co](https://toJSON.co/)
 
 # features
 
-The goal of this library is to function as a one-stop interface. It does not handle any conversion logic itself but utilizes other popular conversion libraries as dependency.
+The goal of this library is to function as a one-stop interface. It does not handle any conversion logic itself but utilizes other popular [conversion libraries as dependency](https://github.com/Jasonette/to_json/blob/master/package.json#L15).
 
 Currently supports:
 
