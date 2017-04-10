@@ -10,7 +10,17 @@ Turn everything into JSON!
 
 Easily convert ANY data type to JSON with a uniform interface (`str.to_json('html')`, `str.to_json('markdown')`, etc.).
 
-Note: The goal of this library is to function as a one-stop interface. It does not handle any conversion logic itself but utilizes other popular conversion libraries as dependency.
+<br>
+
+# demo
+
+Try it out at [toJSON.co](https://toJSON.co/)
+
+<br>
+
+# features
+
+The goal of this library is to function as a one-stop interface. It does not handle any conversion logic itself but utilizes other popular conversion libraries as dependency.
 
 Currently supports:
 
@@ -27,6 +37,8 @@ rss       | str.to_json('rss')
 svg       | str.to_json('svg')
 xml       | str.to_json('xml')
 yaml      | str.to_json('yaml')
+
+Missing a cool data format? [Contribute!](#contribute)
 
 <br>
 
