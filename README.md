@@ -2,9 +2,9 @@
 
 # to_json
 
-Turn any data into JSON with a minimal & uniform interface!
+Turn any data into JSON with a uniform interface!
 
-As simple as `str.to_json('html')`, `str.to_json('csv')`, `str.to_json('xml')`, `str.to_json('yaml')`, `str.to_json('markdown')`, etc.
+Just call `to_json()` on any data with its data format as argument to get the parsed JSON. As simple as `str.to_json('html')`, `str.to_json('csv')`, `str.to_json('xml')`, `str.to_json('yaml')`, `str.to_json('markdown')`, etc.
 
 <br>
 
