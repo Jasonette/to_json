@@ -4,6 +4,8 @@
 
 Turn everything into JSON!
 
+<br>
+
 # what is it?
 
 Easily convert ANY data type to JSON with a uniform interface (`str.to_json('html')`, `str.to_json('markdown')`, etc.).
@@ -26,17 +28,21 @@ svg       | str.to_json('svg')
 xml       | str.to_json('xml')
 yaml      | str.to_json('yaml')
 
+<br>
+
 # installation
 
 ```
 npm install to_json
 ```
 
+<br>
+
 # usage
 
 There are two types: [synchronous](#1-synchronous) and [asynchronous](#2-asynchronous).
 
-## 1. Synchronous
+## 1. synchronous
 
 Most `to_json` adapters are synchronous. For these, you simply call `to_json` and use the return value.
 
@@ -47,7 +53,7 @@ var json = data.to_json('html');
 console.log(json);
 ```
 
-## 2. Asynchronous
+## 2. asynchronous
 
 A few adapters (`csv` and `feed`) are asynchronous because the underlying library is asynchronous. For these just call `to_json` and pass a callback which will be triggered with the result.
 
@@ -58,6 +64,8 @@ data.to_json('csv', function(json){
   console.log(json);
 });
 ```
+
+<br>
 
 # example
 
@@ -107,6 +115,7 @@ str.to_json('xml');
 str.to_json('svg');
 ```
 
+<br>
 
 # advanced
 
@@ -122,6 +131,8 @@ to_json.init({
 var data = "[SOME CSV STRING]";
 var json = data.to_json('csv');
 ```
+
+<br>
 
 # contribute
 Feel free to send pull requests if you have improvements, bug fixes, or wrote any additional adapters.
