@@ -1,0 +1,25 @@
+{
+  "name": "to_json",
+  "version": "1.0.10",
+  "description": "turn everything into json",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "browserify src/index.js --standalone init > dist/to_json.js"
+  },
+  "author": "gliechtenstein",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^3.2.0",
+    "request": "^2.81.0"
+  },
+  "dependencies": {
+    "cheerio": "^0.22.0",
+    "cson-parser": "^1.3.5",
+    "csvtojson": "^1.1.4",
+    "feedparser": "^2.1.0",
+    "hjson": "^2.4.1",
+    "js-yaml": "^3.8.3",
+    "marked": "^0.3.6",
+    "x2js": "^3.1.0"
+  }
+}
