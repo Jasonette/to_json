@@ -124,12 +124,13 @@ Sometimes you don't need all the data formats. Let's say you ONLY want to use th
 Simply initialize by calling the `init` method with a subset of adapters as can be seen in [adapters.js](src/adapters.js)
 
 ```
-var to_json = require('to_json');
-to_json.init({
+require('to_json').init({
   csv: require('./adapters/csv')
 });
-var data = "[SOME CSV STRING]";
-var json = data.to_json('csv');
+var data = "age, sex, location\n1,male,home\n20,female,nightclub\n30,male,work";
+data.to_json('csv', function(json){
+  console.log(json);
+});
 ```
 
 <br>
