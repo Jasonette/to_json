@@ -2,15 +2,17 @@
 
 # to_json
 
-Turn everything into JSON!
+Turn any data into JSON with a minimal & uniform interface!
+
+As simple as `str.to_json('html')`, `str.to_json('csv')`, `str.to_json('xml')`, `str.to_json('yaml')`, `str.to_json('markdown')`, etc.
 
 <br>
 
-# what is it?
+# why?
 
-Easily convert ANY data type to JSON with a uniform interface (`str.to_json('html')`, `str.to_json('markdown')`, etc.).
+Our goal with [Jasonette](https://www.jasonette.com) is to express all kinds of app logic in JSON. But not all existing data is in JSON. Also not everyone likes writing JSON.
 
-<br>
+What if you could take any data format and simply run `str.to_json("markdown")` to get a parsed JSON?
 
 # demo
 
