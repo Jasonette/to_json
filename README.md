@@ -184,8 +184,6 @@ str.to_json('svg');
 # contribute
 Feel free to send pull requests if you have improvements, bug fixes, or wrote any additional adapters.
 
-If you have a suggestion for a new data type support, here's how to write an adapter:
+If you have a suggestion for a new data type support, [open an issue](https://github.com/Jasonette/to_json/issues/new).
 
-1. Write an adapter function (Look under [adapters folder](src/adapters) to see how other types work, and just add another there)
-2. Add an entry under [src/adapters.js](src/adapters.js) registry.
-3. Send a PR!
+I am pretty serious when I say "let's turn everything into JSON", so even if it feels crazy, please feel free to suggest. In fact, the crazy it is the better.
