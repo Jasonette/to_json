@@ -99,14 +99,14 @@ Currently supports:
 
 data type | command                           | installation
 ----------|-----------------------------------|-----------------------------
-feed      | str.to_json('feed', callback)     | `npm install feed.to_json' 
-csv       | str.to_json('csv', callback)      | `npm install csv.to_json' 
-cson      | str.to_json('cson')               | `npm install cson.to_json' 
-hjson     | str.to_json('hjson')              | `npm install hjson.to_json' 
-html      | str.to_json('html')               | `npm install html.to_json' 
-markdown  | str.to_json('markdown')           | `npm install markdown.to_json' 
-xml       | str.to_json('xml')                | `npm install xml.to_json' 
-yaml      | str.to_json('yaml')               | `npm install yaml.to_json' 
+feed      | str.to_json('feed', callback)     | `npm install feed.to_json`
+csv       | str.to_json('csv', callback)      | `npm install csv.to_json`
+cson      | str.to_json('cson')               | `npm install cson.to_json`
+hjson     | str.to_json('hjson')              | `npm install hjson.to_json`
+html      | str.to_json('html')               | `npm install html.to_json`
+markdown  | str.to_json('markdown')           | `npm install markdown.to_json`
+xml       | str.to_json('xml')                | `npm install xml.to_json`
+yaml      | str.to_json('yaml')               | `npm install yaml.to_json`
 
 Missing a cool data format? [Contribute!](#contribute)
 
