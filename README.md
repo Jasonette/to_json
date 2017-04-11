@@ -28,8 +28,8 @@ Try it out at [toJSON.co](https://toJSON.co/)
 
 **to_json** is completely modular so you can only include the data types you want to support. To support different types you need to:
 
-1. Install each adapter
-2. Attach them using the `use` method
+1. Install each adapter via NPM
+2. Attach them using `use` method
 
 For example let's say we want to support [hjson](https://hjson.org/), [cson](https://github.com/bevry/cson), and [yaml](http://yaml.org/)
 
