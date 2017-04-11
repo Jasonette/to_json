@@ -4,7 +4,9 @@
 
 Turn any data into JSON with a uniform interface!
 
-Just call `to_json()` on any data with its data format as argument to get the parsed JSON. As simple as `str.to_json('html')`, `str.to_json('csv')`, `str.to_json('xml')`, `str.to_json('yaml')`, `str.to_json('markdown')`, etc.
+Just call `to_json()` on any data with its data format as argument to get the parsed JSON.
+
+It's as simple as `str.to_json('html')`, `str.to_json('csv')`, `str.to_json('xml')`, `str.to_json('yaml')`, `str.to_json('markdown')`, etc.
 
 <br>
 
@@ -48,8 +50,31 @@ Missing a cool data format? [Contribute!](#contribute)
 
 # installation
 
+**to_json** is completely modular so you can only include the data types you want to support. To support different types you need to:
+
+1. Install each adapter
+2. Attach them using the `use` method
+
+For example let's say we want to support [hjson](https://hjson.org/), [cson](https://github.com/bevry/cson), and [yaml](http://yaml.org/)
+
+## 1. install
+
 ```
 npm install to_json
+npm install hjson.to_json
+npm install cson.to_json
+npm install yaml.to_json
+```
+
+## 2. setup
+
+In your code, attach the adapters
+
+```
+require('to_json')
+  .use('hjson', require('hjson.to_json'))
+  .use('cson', require('cson.to_json'))
+  .use('yaml', require('yaml.to_json'))
 ```
 
 <br>
@@ -129,24 +154,6 @@ str.to_json('xml');
 ## SVG to JSON
 ```
 str.to_json('svg');
-```
-
-<br>
-
-# advanced
-
-Sometimes you don't need all the data formats. Let's say you ONLY want to use this for CSV.
-
-Simply initialize by calling the `init` method with a subset of adapters as can be seen in [adapters.js](src/adapters.js)
-
-```
-require('to_json').init({
-  csv: require('./adapters/csv')
-});
-var data = "age, sex, location\n1,male,home\n20,female,nightclub\n30,male,work";
-data.to_json('csv', function(json){
-  console.log(json);
-});
 ```
 
 <br>
